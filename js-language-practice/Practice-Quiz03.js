@@ -1,3 +1,8 @@
+// In this Practice-Quiz03 I have learn how to use template literals,comparison operators,
+// assignment operators,Conditional statements,Switch Cases and Prompts and alert.
+// I solve some practice question to chcek my logical understanding of my these concepts...
+
+
 // Question01: Create a number num with value.
 // Now, print "good" if the number is divisible by 10 and print "bad"
 // if it is not...
