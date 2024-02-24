@@ -44,3 +44,33 @@ if ( (str[0] === 'a') && (str.length > 3)){
 else{
     console.log("string is bad!");
 };
+
+//QuestionNo 04: Use switch statement to print day of yhe week using a number
+// variable 'day' values 1 to 7.
+// 1=Monday ,2 Tuesday & so on
+ let day = 6;
+ switch (day){
+    case 1:
+        console.log("Today is Monday!");
+        break;
+    case 2:
+        console.log("Today is Tuesday!");
+        break;
+    case 3:
+        console.log("Today is Wednesday!");
+        break;
+    case 4:
+        console.log("Today is Thurday!");
+        break;
+    case 5:
+        console.log("Today is Friday!");
+        break;
+    case 6:
+        console.log("Today is Saturday!");
+        break;
+    case 7:
+        console.log("Today is Sunday!");
+        break;
+    default:
+        console.log("Wrong day");
+ }
