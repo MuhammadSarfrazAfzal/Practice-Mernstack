@@ -20,11 +20,11 @@ else {
 // name is age years old.
 // using template literals
  
-// let userName = prompt("Enter your name!");
-// let userAge = prompt("Please Enter your age:");
+let userName = prompt("Enter your name!");
+let userAge = prompt("Please Enter your age:");
 
-// let pageAlert = alert(`${userName} is ${userAge} years old!`);
-// console.log(pageAlert);
+let pageAlert = alert(`${userName} is ${userAge} years old!`);
+console.log(pageAlert);
 
 // Question03: Write a switch statement to print the months in quarter.
 // use the number as case value in switch
