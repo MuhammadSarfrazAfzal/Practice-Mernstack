@@ -1,0 +1,33 @@
+/* Write CSs for these Elemts accoring to the given style guidelines  */
+/* h2 color orange text */
+/* p color black background color white text */
+/* button blue backgruond color ,white text */
+
+h2{
+    color: orange;
+}
+
+p{
+    background-color: black;
+    color: white;
+}
+button{
+    background-color: blue;
+    color: white;
+}
+
+/* Design the given apna college logo using css instructions */
+/* Set the font to league spartan */
+/* set color of text to #ffa511 */
+/* center align the text */
+
+h1{
+    font-family: League spartan;
+    color: #ffa511;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900px;
+    letter-spacing: 2px;
+    text-decoration: teal double underline;
+    text-transform: uppercase;
+}
