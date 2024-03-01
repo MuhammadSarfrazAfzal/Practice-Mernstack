@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms And Tables</title>
+</head>
+<body>
+    <!--Question01: using html tabel-->
+    <table border="black">
+        <caption>Student Information</caption>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>House</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="5">Info</th>
+                <td>A</td>
+                <td>Islamabad</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Lahore</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Karachi</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Multan</td>
+                <td>4</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <!--Create following form using HTML:-->
+    <div class="Feedback Form">
+        <form action="">
+            
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" placeholder="Write your name" >
+                <br>
+            
+                <label for="useremail">Email</label>
+                <input type="text" id="useremail" name="useremail" placeholder="Write your email" >
+                <br>
+
+                <label for="message">Message:</label>
+                <br>
+
+                <textarea name="message" id="message" cols="30" rows="7"></textarea>
+                <br>
+            
+                <label for="">Rate us our of 5:</label>
+                <br>
+                
+                <input type="radio" id="1" name="1">
+                <label for="1">1</label>
+                <br>
+
+                <input type="radio" id="2" name="2">
+                <label for="2">2</label>
+                <br>
+
+                <input type="radio" id="3" name="3">
+                <label for="3">3</label>
+                <br>
+
+                <input type="radio" id="4" name="4">
+                <label for="4">4</label>
+                <br>
+
+                <input type="radio" id="5" name="5">
+                <label for="5">5</label>
+                <br>
+
+                <button>Send your message!</button>
+            
+        </form>
+    </div>
+
+</body>
+</html>
