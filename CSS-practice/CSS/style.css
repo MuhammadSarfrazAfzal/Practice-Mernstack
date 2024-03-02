@@ -1,0 +1,21 @@
+*{
+    font-family: 'Courier New';
+}
+h1{
+    color: turquoise;
+}
+#signup{
+    background-color: turquoise;
+}
+button{
+    background-color: chocolate;
+}
+h3{
+    color: cadetblue;
+}
+p{
+    color: blueviolet;
+}
+.follow{
+    color: chartreuse;
+}
