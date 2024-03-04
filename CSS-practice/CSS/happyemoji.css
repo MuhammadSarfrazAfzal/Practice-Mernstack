@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    height: 600px;
+    width: 600px;
+    background: yellow;
+    border-radius: 50%;
+    position:absolute ;
+}
+#right,#left{
+    background: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 150px;
+    margin-left: 170px;
+}
+#lips{
+    height: 100px;
+    width: 300px;
+    background: red;
+    margin-top: 180px;
+    margin-left: 160px;
+    border-radius: 0 0 50px 50px;
+}
+
