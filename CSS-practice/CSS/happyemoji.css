@@ -22,15 +22,20 @@ body{
     width: 50px;
     border-radius: 50%;
     display: inline-block;
-    margin-top: 150px;
-    margin-left: 170px;
+    position: absolute;
+    top: 170px;
+    left: 150px;
+}
+#right{
+    margin-left: 249px;
 }
 #lips{
     height: 100px;
     width: 300px;
     background: red;
-    margin-top: 180px;
-    margin-left: 160px;
     border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: 380px;
+    left: 150px;
 }
 
