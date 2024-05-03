@@ -15,6 +15,22 @@
           <li class="dropdown-option">Physics</li>
         </ul>
     </div>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="errorMessages"></div>
+
     <script src="index.js"></script>
 </body>
 </html>

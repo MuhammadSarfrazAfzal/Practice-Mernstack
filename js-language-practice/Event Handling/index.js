@@ -24,3 +24,21 @@ const dropdownOptions = document.querySelector('.dropdown-options');
 function backgroundChange(){
     btn.style.backgroundColor = 'green';
 }
+
+// 4. Write a JavaScript program that implements a "form" validation that displays an error message
+// if a required field is left empty when submitting the form.
+let form = document.getElementById("myForm");
+let errorMessages = document.getElementById("errorMessages");
+form.addEventListener('submit',(Event)=>{
+    Event.preventDefault();
+    errorMessages.innerHTML = '';
+    const requiredFields = form.querySelectorAll('[required]');
+      requiredFields.forEach((field) => {
+        if (field.value.trim() === '') {
+          const fieldName = field.getAttribute('name');
+          const errorMessage = document.createElement('p');
+          errorMessage.textContent = `${fieldName} is required.`;
+          errorMessages.appendChild(errorMessage);
+        }
+    });
+});
