@@ -1,9 +1,14 @@
 import React from 'react';
 import "./App.css";
-import Card from "./components/card";
+import Card from './components/cardprops';
+import { Filter, Mappractice } from './components/react-ES6/arraymethod';
+import Usestatehook from './components/react-hooks/Usestate';
 
 function App() {
   return (
+    <>
+    <Mappractice></Mappractice>
+    <Filter></Filter>
     <div className="container">
       <div className="row">
         <Card
@@ -24,26 +29,11 @@ function App() {
           alt="blackpanter"
           exp_date="10-08-2022"
         />
-        <Card
-          title="What is Lorem Ipsum?"
-          images="../images/arthur.png"
-          old_price="7999"
-          newPrice="7000"
-          dollar="$"
-          alt="arthur"
-          exp_date="10-08-2022"
-        />
-        <Card
-          title="What is Lorem Ipsum?"
-          images="../images/kashima.png"
-          old_price="999"
-          newPrice="500"
-          dollar="$"
-          alt="kashima"
-          exp_date="10-08-2022"
-        />
       </div>
     </div>
+    <arraymethods></arraymethods>
+    <Usestatehook></Usestatehook>
+    </>
   );
 }
 export default App;
