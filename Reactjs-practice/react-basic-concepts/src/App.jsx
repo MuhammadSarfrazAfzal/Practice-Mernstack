@@ -3,7 +3,7 @@ import "./App.css";
 import Card from './components/cardprops';
 import { Filter, Mappractice } from './components/react-ES6/arraymethod';
 import Usestatehook from './components/react-hooks/Usestate';
-import Timer from './components/react-hooks/Useeffect';
+import FetchData from './components/react-hooks/Useeffect';
 function App() {
   return (
     <>
@@ -33,8 +33,7 @@ function App() {
     </div>
     <arraymethods></arraymethods>
     <Usestatehook></Usestatehook>
-    <Timer></Timer>
-    
+    <FetchData></FetchData>
     </>
   );
 }

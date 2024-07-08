@@ -1,15 +1,25 @@
 import { useState, useEffect } from "react";
 
-function Timer() {
-    const [count, setCount] = useState(0);
+function FetchData() {
+    const [state,setState] = useState(0);
+    const [data, setdata] = useState([]);
 
     useEffect(() => {
-        setTimeout(() => {
-            setCount((count) => count + 1);
-        }, 1000);
-    });
+        async function getdata (){
+            let url = 'https://fakestoreapi.com/products/1';
+            const data = await fetch(url);
+            const res = await data.json();
+            console.log(res);
+            setdata(res);
+        }
+        getdata();
+    },[state]);
 
-    return <h1>I've rendered {count} times!</h1>;
+    return (
+        <>
+        <button onClick={()=> setState(state+5)}>Get Data</button>
+        </>
+    );
 }
-export default Timer;
+export default FetchData;
 
