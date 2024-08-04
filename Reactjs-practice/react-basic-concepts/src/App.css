@@ -216,4 +216,9 @@
     -webkit-transition-delay: .2s;
             transition-delay: .2s;
   }
-  
+  .heading{
+    background-color: aqua;
+    color: #000;
+    text-align: center;
+    height: 40px;
+   }

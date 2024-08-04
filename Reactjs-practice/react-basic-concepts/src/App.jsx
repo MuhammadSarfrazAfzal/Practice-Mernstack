@@ -1,40 +1,22 @@
-import React from 'react';
+import React  from 'react';
+import { useState } from 'react';
 import "./App.css";
-import Card from './components/cardprops';
-import { Filter, Mappractice } from './components/react-ES6/arraymethod';
-import Usestatehook from './components/react-hooks/Usestate';
-import FetchData from './components/react-hooks/Useeffect';
+import Header from './components/Header';
+import ComA from './components/react-hooks/Usecontext/ComA';
+import { createContext } from 'react';
+const Appstate = createContext()
 function App() {
+  const [ Data , SetData ] = useState("Sarfraz")
+  
   return (
     <>
-    <Mappractice></Mappractice>
-    <Filter></Filter>
-    <div className="container">
-      <div className="row">
-        <Card
-          title="What is Lorem Ipsum?"
-          images="../images/batman.png"
-          old_price="9,999"
-          newPrice="9999"
-          dollar="$"
-          alt="batman"
-          exp_date="10-08-2022"
-        />
-        <Card
-          title="What is Lorem Ipsum?"
-          images="../images/blackpanter.png"
-          old_price="599"
-          newPrice="500"
-          dollar="$"
-          alt="blackpanter"
-          exp_date="10-08-2022"
-        />
-      </div>
-    </div>
-    <arraymethods></arraymethods>
-    <Usestatehook></Usestatehook>
-    <FetchData></FetchData>
+    <Appstate.Provider value={Data}>
+    <Header></Header>
+    <ComA></ComA>
+    </Appstate.Provider>
+    
     </>
   );
 }
 export default App;
+export {Appstate}
