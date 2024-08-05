@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div>
-      <h1 className='heading'>Useref hook!</h1>
+      <h1 className='heading'>Usereducer hook!</h1>
     </div>
   )
 }
