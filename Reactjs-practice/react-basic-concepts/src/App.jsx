@@ -6,6 +6,7 @@ import ComA from './components/react-hooks/Usecontext/ComA';
 import { createContext } from 'react';
 import Useref from './components/react-hooks/Useref';
 import Usereducer from './components/react-hooks/Usereducer';
+import Mavbar from './components/react-ES6/react-router-dom/Mavbar';
 const Appstate = createContext()
 function App() {
   const [ Data , SetData ] = useState("Sarfraz")
@@ -15,8 +16,9 @@ function App() {
     {/* <Appstate.Provider value={Data}>
     <ComA></ComA>
     </Appstate.Provider> */}
-    <Header></Header>
-    <Usereducer/>
+    {/* <Header></Header>
+    <Usereducer/> */}
+    <Mavbar></Mavbar>
     
     </>
   );
